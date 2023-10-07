@@ -21,10 +21,13 @@
     <link rel="stylesheet"
         href="https://viding.co/invitation/theme_90/assets/css/styles.css?v=46247289917a161d1a131d1a136d6eec7a990378">
     <link rel="stylesheet" href="/css/gift_registry.css?v=17eba8d59bf3887de543e28da2fff5b0b1918b11">
+    <link rel="stylesheet" href="/css/boxicons.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 
 <body>
+    </div>
     <div class="main-app">
         <!-- Loader -->
         <div class="loader-wrapper"></div>
@@ -83,6 +86,16 @@
         <div class="moveable_section_wrapper">
             <!-- Header section -->
             <section class="header-section">
+                <div class="music-player playing">
+                    <div class="play-button">
+                        <i class="bx bx-headphone"></i>
+                    </div>
+                    <audio id="my-audio">
+                        <source
+                            src="https://s3.ap-southeast-1.amazonaws.com/cdn.kadio.id/songs/marry-your-daughter.mp3"
+                            type="audio/mpeg">
+                    </audio>
+                </div>
                 <div class="elements-wrapper-absolute" data-anim="zoom-out-bg-wrap" data-anim-duration="9500ms">
                     <div class="background-element latar-bg" data-anim="zoom-out-latar" data-anim-duration="9500ms">
                         <img data-src="https://media.viding.co/dmlkaW5nIGNvIGltYWdlIHByb3h5IGJ5IGZseS5pbw/rs:auto:1080:0:1/g:no/aHR0cHM6Ly92aWRpbmcuY28vaW52aXRhdGlvbi90aGVtZV85MC9hc3NldHMvaW1hZ2VzL2JnLWxhdGFyLnBuZw.webp"
@@ -675,8 +688,8 @@
                                             </div>
                                             <div class="mb-3">
                                                 <textarea required name="comment" cols="30" rows="5"
-                                                    placeholder="Tulis do'a dan ucapanmu"
-                                                    class="form-control" id="myQuotes"></textarea>
+                                                    placeholder="Tulis do'a dan ucapanmu" class="form-control"
+                                                    id="myQuotes"></textarea>
                                             </div>
                                         </form>
                                         <button type="buttton" class="btn btn-custom color-secondary m-auto w-100 mb-3"

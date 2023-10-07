@@ -115,4 +115,34 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+const musicPlayer = document.querySelector('.music-player');
+const playButton = document.querySelector('.play-button');
+const audio = document.querySelector('#my-audio');
 
+let isPlaying = true;
+
+playButton.addEventListener('click', () => {
+  if (isPlaying) {
+    pauseAudio();
+  } else {
+    playAudio();
+  }
+});
+
+function playAudio() {
+  isPlaying = true;
+  musicPlayer.classList.add('playing');
+  playButton.innerHTML = '<i class="bx bx-headphone"></i>';
+  audio.play();
+}
+
+function pauseAudio() {
+  isPlaying = false;
+  musicPlayer.classList.remove('playing');
+  playButton.innerHTML = '<i class="bx bx-caret-right"></i>';
+  audio.pause();
+}
+
+audio.addEventListener('ended', () => {
+  pauseAudio();
+});
